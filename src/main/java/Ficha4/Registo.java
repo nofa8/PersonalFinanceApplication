@@ -1,14 +1,17 @@
 package Ficha4;
 
 public class Registo {
+
     private float valor;
     private Categoria categoria;
     private String descricao;
 
-    public Registo(float valor, Categoria categoria, String descricao) {
+    public Registo( float valor, Categoria categoria, String descricao) {
+
         this.valor = valor;
         this.categoria = categoria;
         this.descricao = descricao;
+
     }
 
 
