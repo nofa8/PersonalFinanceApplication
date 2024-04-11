@@ -1,4 +1,4 @@
-package src.main.java.Ficha4;
+package Ficha4;
 
 public class RegistsPage {
 }
