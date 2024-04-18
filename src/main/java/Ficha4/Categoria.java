@@ -3,7 +3,6 @@ package Ficha4;
 public enum Categoria {
     ALIMENTACAO,
     CASA,
-    CARRO,
     TRANSPORTE,
     LAZER,
     SAUDE,
