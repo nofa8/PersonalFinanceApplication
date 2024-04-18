@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class CreateRegistPage  extends JFrame{
+public class CreateRegistPage  extends JFrame {
     private JButton backButton;
     private JButton createButton;
     private JTextField textField1;
@@ -22,15 +22,24 @@ public class CreateRegistPage  extends JFrame{
         this.setLocationRelativeTo(null);
         this.setVisible(true);
 
+        comboBox1.addItem("Profit");
+        comboBox1.addItem("Loss");
+
+        for (Categoria categoria : Categoria.values()) {
+            comboBox2.addItem(categoria.name());
+        }
 
 
         backButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                FirstPage firstPage = new FirstPage();
+                MainPage mainPage = new MainPage();
                 dispose();
 
             }
         });
     }
 }
+
+
+
