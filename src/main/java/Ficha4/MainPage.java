@@ -1,9 +1,24 @@
 package Ficha4;
 
-public class MainPage extends Frame{
+import javax.swing.*;
+
+public class MainPage extends JFrame {
+    private JPanel bigPanel;
+    private JProgressBar progressBar1;
+    private JLabel userName;
+    private JLabel saldoValue;
+    private JPanel navBarUp;
+    private JButton buttonPerfil;
+    private JButton buttonStatistics;
+    private JButton buttonHome;
+    private JButton buttonMoviments;
+    private JLabel saldoText;
+    private JRadioButton radioButton;
+    private JTextArea textLastMoviments;
+
     public MainPage() {
         super("MainPage");
-        this.setContentPane(MainPage);
+        this.setContentPane(bigPanel);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.pack();
         this.setVisible(true);
