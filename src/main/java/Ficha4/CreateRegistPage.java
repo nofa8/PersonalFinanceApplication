@@ -23,6 +23,8 @@ public class CreateRegistPage  extends JFrame {
         this.setVisible(true);
 
         comboBox1.addItem("Profit");
+
+
         comboBox1.addItem("Loss");
 
         for (Categoria categoria : Categoria.values()) {
