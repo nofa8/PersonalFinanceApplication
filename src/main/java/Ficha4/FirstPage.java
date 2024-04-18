@@ -16,6 +16,8 @@ public class FirstPage extends JFrame {
         this.setContentPane(firstPage);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.pack();
+        this.setSize(400, 400);
+        this.setLocationRelativeTo(null);
         this.setVisible(true);
 
 
@@ -23,8 +25,6 @@ public class FirstPage extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 CreateAccPage createAccPage = new CreateAccPage();
-                createAccPage.setSize(400, 400);
-                createAccPage.setVisible(true);
                 dispose();
             }
         });
@@ -32,7 +32,5 @@ public class FirstPage extends JFrame {
 
     public static void main(String[] args) {
         FirstPage firstPage1 = new FirstPage();
-        firstPage1.setSize(400, 400);
-        firstPage1.setVisible(true);
     }
 }

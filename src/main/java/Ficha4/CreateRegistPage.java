@@ -4,19 +4,21 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class CreateAccPage extends JFrame {
-    private JPanel createAcc;
-    private JButton createAccountButton;
-    private JPasswordField passwordField1;
-    private JTextField textField1;
+public class CreateRegistPage  extends JFrame{
     private JButton backButton;
+    private JButton createButton;
+    private JTextField textField1;
+    private JComboBox comboBox1;
+    private JTextArea description;
+    private JComboBox comboBox2;
+    private JPanel bigPanel;
 
-    public CreateAccPage() {
-        super("Login");
-        this.setContentPane(createAcc);
+    public CreateRegistPage() {
+        super("Create Registration");
+        this.setContentPane(bigPanel);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.pack();
-        this.setSize(400, 400);
+        this.setSize(800, 600);
         this.setLocationRelativeTo(null);
         this.setVisible(true);
 
@@ -31,5 +33,4 @@ public class CreateAccPage extends JFrame {
             }
         });
     }
-
 }
