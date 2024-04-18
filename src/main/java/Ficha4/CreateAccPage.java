@@ -30,6 +30,14 @@ public class CreateAccPage extends JFrame {
 
             }
         });
+
+        createAccountButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                MainPage main = new MainPage();
+                dispose();
+            }
+        });
     }
 
 }

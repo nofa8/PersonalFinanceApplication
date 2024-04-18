@@ -1,6 +1,8 @@
 package Ficha4;
 
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class MainPage extends JFrame {
     private JPanel bigPanel;
@@ -21,15 +23,32 @@ public class MainPage extends JFrame {
         this.setContentPane(bigPanel);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.pack();
+        this.setSize(800, 600);
+        this.setLocationRelativeTo(null);
         this.setVisible(true);
 
 
-    }
+        buttonMoviments.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
 
-    public static void main(String[] args) {
-        MainPage mainPage1 = new MainPage();
-        mainPage1.setSize(1200, 800);
-        mainPage1.setVisible(true);
+                RegistsPage regists = new RegistsPage();
+                //setVisible(false);
+            }
+        });
+        buttonStatistics.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                StatisticsPage stat = new StatisticsPage();
+                //setVisible(false);
+            }
+        });
+        buttonPerfil.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                UserPage stat = new UserPage();
+                //setVisible(false);
+            }
+        });
     }
-
 }

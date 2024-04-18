@@ -28,6 +28,13 @@ public class FirstPage extends JFrame {
                 dispose();
             }
         });
+        loginButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                MainPage main = new MainPage();
+                dispose();
+            }
+        });
     }
 
     public static void main(String[] args) {

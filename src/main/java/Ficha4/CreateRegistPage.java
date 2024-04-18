@@ -34,9 +34,18 @@ public class CreateRegistPage  extends JFrame {
         backButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                MainPage mainPage = new MainPage();
+                //main page viewable
                 dispose();
 
+            }
+        });
+        createButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+                //main page viewable
+                MainPage mainPage = new MainPage();
+                dispose();
             }
         });
     }
