@@ -5,11 +5,14 @@ import java.security.NoSuchAlgorithmException;
 import static Ficha4.ListaDeContas.contas;
 import static Ficha4.ListaDeContas.usernameAlreadyExists;
 
+//ok
 public class Conta {
 
     private String username;
     private String hashPassword;
     private ListaDeRegistos registos;
+
+    private float saldo;
 
     public Conta(String username, String hashPassword) {
 
@@ -18,6 +21,7 @@ public class Conta {
         }
         this.username = username;
         this.hashPassword = stringToHash(hashPassword);
+        saldo = 0;
         contas.add(this);
 
     }
@@ -42,9 +46,12 @@ public class Conta {
     //REGISTO
     public void addRegisto(float valor, Categoria categoria, String descricao){
         registos.add( valor,  categoria,  descricao);
+        saldo+= valor;
     }
     public void editRegisto(long id, float valor, Categoria categoria, String descricao){
+        //remover o ex valorrrr TODO
         registos.edit( id, valor,  categoria,  descricao);
+        saldo+=valor;
     }
     public void removeRegisto(long id){
         registos.remove(id);
