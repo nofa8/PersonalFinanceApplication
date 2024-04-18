@@ -23,7 +23,7 @@ public class CreateAccPage extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 FirstPage firstPage = new FirstPage();
-                firstPage.setSize(1200, 800);
+                firstPage.setSize(400, 400);
                 firstPage.setVisible(true);
                 dispose();
 
@@ -33,7 +33,7 @@ public class CreateAccPage extends JFrame {
 
     public static void main(String[] args) {
         CreateAccPage createAccs = new CreateAccPage();
-        createAccs.setSize(1200, 800);
+        createAccs.setSize(400, 400);
 
         createAccs.setVisible(true);
     }
